@@ -122,6 +122,40 @@ export class LinkedList {
 
     return this.getList();
   }
+
+  reverse() {
+    let prev = null; // Previous node (starts as null)
+    let current = this.head; // Current node (starts as head)
+
+    while (current !== null) {
+      let nextNode = current.next; // Store the next node
+      current.next = prev; // Reverse the `next` pointer
+
+      // Move `prev` and `current` one step forward
+      prev = current;
+      current = nextNode;
+    }
+
+    this.head = prev;
+  }
+
+  swapTwoNodes() {
+    let current = this.head;
+
+    while (current.next) {
+      // swap value
+      let temp = current.next.value;
+      current.next.value = current.value;
+      current.value = temp;
+
+      // move current
+      current = current.next.next
+
+      if(!current) {
+        break;
+      }
+    }
+  }
 }
 
 export const merge = (list1, list2) => {
@@ -142,14 +176,12 @@ export const merge = (list1, list2) => {
   return list1.getList();
 };
 
-// const list1 = new LinkedList();
-// list1.add(1);
-// list1.add(2);
-// list1.add(3);
-// list1.add(5);
+export const createLinkedList = (list) => {
+  const linkedList = new LinkedList();
 
-// const list2 = new LinkedList();
-// list2.add(3);
-// list2.add(4);
+  list.forEach((it) => {
+    linkedList.add(it);
+  });
 
-// console.log(merge(list1, list2))
+  return linkedList;
+};

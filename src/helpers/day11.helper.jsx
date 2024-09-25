@@ -81,7 +81,7 @@ harry`}
         <Form.Item
           label="String"
           name="b5"
-          initialValue={["a","banana","app","appl","ap","apply","apple"]}
+          initialValue={["a", "banana", "app", "appl", "ap", "apply", "apple"]}
           rules={[{ required: true, message: "Please input Bài 5!" }]}
         >
           <Input />
@@ -107,27 +107,27 @@ export const getTopic = (bai) => {
     case "1":
       return {
         image: "image",
-        link: "/assets/images/day10-1.png",
+        link: "/assets/images/day11-1.png",
       };
     case "2":
       return {
         image: "image",
-        link: "/assets/images/day10-2.png",
+        link: "/assets/images/day11-2.png",
       };
     case "3":
       return {
         image: "image",
-        link: "/assets/images/day10-3.png",
+        link: "/assets/images/day11-3.png",
       };
     case "4":
       return {
         image: "image",
-        link: "/assets/images/day10-4.png",
+        link: "/assets/images/day11-4.png",
       };
     case "5":
       return {
         image: "image",
-        link: "/assets/images/day10-5.png",
+        link: "/assets/images/day11-5.png",
       };
 
     default:
@@ -137,27 +137,30 @@ export const getTopic = (bai) => {
   }
 };
 
-export const twoSum = function(nums, target) {
-  const map = {}; // Store number and its index
-  console.log("Starting twoSum function...");
-  console.log("nums:", nums, "target:", target);
+export const twoSum = function (l1, l2) {
+  let memory = 0;
+  let result = [];
+  const maxLength = Math.length(l1.length, l2.length);
 
-  for (let i = 0; i < nums.length; i++) {
-      const complement = target - nums[i];
-      console.log(`Index ${i}: num = ${nums[i]}, complement = ${complement}`);
+  for (let i = 0; i < maxLength; i++) {
+    // Extract the current values, default to 0 if out of bounds
+    let num1 = i < l1.length ? parseInt(l1[i]) : 0;
+    let num2 = i < l2.length ? parseInt(l2[i]) : 0;
 
-      if (map.hasOwnProperty(complement)) {
-          console.log(`Found complement! nums[${map[complement]}] + nums[${i}] = ${target}`);
-          return [map[complement], i]; // Return indices
-      }
+    // Calculate the sum of the two numbers plus carry
+    let sum = num1 + num2 + memory;
 
-      map[nums[i]] = i; // Store the index of the current number
-      console.log("Map state:", map);
+    // Determine the new digit and the carry
+    memory = Math.floor(sum / 10);
+    result.push(sum % 10);
   }
 
-  console.log("No solution found.");
-};
+  if (memory) {
+    result.push(memory);
+  }
 
+  return result.join(" ");
+};
 
 export const sherlockAlphabet = (s) => {
   const map = new Map();
@@ -213,5 +216,3 @@ export const sherlockAlphabet = (s) => {
 
   return flag ? "YES" : "NO";
 };
-
-
