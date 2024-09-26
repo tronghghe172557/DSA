@@ -55,6 +55,9 @@ export class LinkedList {
 
   // sort
   sortAsc() {
+    // l1: 3 4 5 6 7
+    // l2: 1 2 3 4
+    //  lm: 3 4 5 6 7 1 2 3 4
     let currentFor = this.head;
 
     for (let i = 0; currentFor.next; i++) {
@@ -149,9 +152,9 @@ export class LinkedList {
       current.value = temp;
 
       // move current
-      current = current.next.next
+      current = current.next.next;
 
-      if(!current) {
+      if (!current) {
         break;
       }
     }
@@ -171,8 +174,14 @@ export const merge = (list1, list2) => {
   // add size
   list1.addSize(list2.size);
 
+  // l1: 3 4 5 6 7
+  // l2: 1 2 3 4
+  //  lm: 3 4 5 6 7 1 2 3 4
   list1.sortAsc();
 
+  // l1: 3 4 5 6 7
+  // l2: 1 2 3 4
+  //  lm: 3 4 5 6 7 1 2 3 4
   return list1.getList();
 };
 
