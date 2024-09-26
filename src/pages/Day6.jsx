@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { LinkedList, merge } from "../helpers/linkedList.helper";
 import { countString, getFormFields, getTopic, textEditor } from "../helpers/day6helper";
+import ShowAssignment from "../components/showAssignment";
 
 function Day6() {
   const { bai } = useParams();
@@ -68,37 +69,7 @@ function Day6() {
 
   return (
     <>
-      <Form
-        form={form}
-        name="basic"
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        autoComplete="off"
-      >
-        <h1>Topic</h1>
-
-        <div>
-          <img
-            style={{ width: "100%", marginBottom: "30px" }}
-            src={getTopic(bai).link}
-            alt={getTopic(bai).image}
-          />
-        </div>
-
-        {/*  */}
-        {getFormFields(bai)}
-
-        {/*  */}
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Solve
-          </Button>
-        </Form.Item>
-      </Form>
-
-      <h4>Đáp án</h4>
-      {/* <h3 id="result">{result}</h3> */}
-      <h2 dangerouslySetInnerHTML={{ __html: result }} />
+      <ShowAssignment {...{ result, onFinish, getTopic, getFormFields, bai }} />
     </>
   );
 }

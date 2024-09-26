@@ -10,6 +10,7 @@ import {
   leftRotation,
   maxCandle,
 } from "../helpers/day7.hepler";
+import ShowAssignment from "../components/showAssignment";
 
 function Day7() {
   const { bai } = useParams();
@@ -31,11 +32,14 @@ function Day7() {
 
       // Đo thời gian thực thi
       console.time("Execution Time");
-      
+
       let resultTemp;
       switch (bai) {
         case "1":
-          resultTemp = leftRotation(values[`array`].split(" "), values[`countRotation`]);
+          resultTemp = leftRotation(
+            values[`array`].split(" "),
+            values[`countRotation`]
+          );
           break;
         case "2":
           resultTemp = maxCandle(values[`bai2`].split(" "));
@@ -66,7 +70,9 @@ function Day7() {
       console.timeEnd("Execution Time");
 
       // Tính thời gian thực thi
-      const elapsedTime = console.timeLog ? console.timeLog("Execution Time") : null;
+      const elapsedTime = console.timeLog
+        ? console.timeLog("Execution Time")
+        : null;
 
       setResult(resultTemp);
       setTime(elapsedTime);
@@ -77,37 +83,7 @@ function Day7() {
 
   return (
     <>
-      <Form
-        form={form}
-        name="basic"
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        autoComplete="off"
-      >
-        <h1>Topic</h1>
-
-        <div>
-          <img
-            style={{ width: "100%", marginBottom: "30px" }}
-            src={getTopic(bai).link}
-            alt={getTopic(bai).image}
-          />
-        </div>
-
-        {/* Render form fields */}
-        {getFormFields(bai)}
-
-        {/* Submit button */}
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Solve
-          </Button>
-        </Form.Item>
-      </Form>
-
-      <h4>Đáp án</h4>
-      <h2 dangerouslySetInnerHTML={{ __html: result }} />
-      {time && <p>Time taken: {time} ms</p>}
+      <ShowAssignment {...{ result, onFinish, getTopic, getFormFields, bai }} />
     </>
   );
 }

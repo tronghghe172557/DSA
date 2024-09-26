@@ -103,27 +103,27 @@ export const getTopic = (bai) => {
     case "1":
       return {
         image: "image",
-        link: "/assets/images/day8-1.png",
+        link: "/assets/images/day9-1.png",
       };
     case "2":
       return {
         image: "image",
-        link: "/assets/images/day8-2.png",
+        link: "/assets/images/day9-2.png",
       };
     case "3":
       return {
         image: "image",
-        link: "/assets/images/day8-3.png",
+        link: "/assets/images/day9-3.png",
       };
     case "4":
       return {
         image: "image",
-        link: "/assets/images/day8-4.png",
+        link: "/assets/images/day9-4.png",
       };
     case "5":
       return {
         image: "image",
-        link: "/assets/images/day8-5.png",
+        link: "/assets/images/day9-5.png",
       };
 
     default:

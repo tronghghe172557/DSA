@@ -2,6 +2,7 @@ import { Form, Button } from "antd";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getFormFields, getTopic, twoSum } from "../helpers/day11.helper";
+import ShowAssignment from "../components/showAssignment";
 
 function Day11() {
   const { bai } = useParams();
@@ -40,37 +41,9 @@ function Day11() {
 
   return (
     <>
-      <Form
-        form={form}
-        name="basic"
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        autoComplete="off"
-      >
-        <h1>Topic</h1>
-
-        <div>
-          <img
-            style={{ width: "100%", marginBottom: "30px" }}
-            src={getTopic(bai).link}
-            alt={getTopic(bai).image}
-          />
-        </div>
-
-        {/*  */}
-        {getFormFields(bai)}
-
-        {/*  */}
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Solve
-          </Button>
-        </Form.Item>
-      </Form>
-
-      <h4>Đáp án</h4>
-      {/* <h3 id="result">{result}</h3> */}
-      <h2 dangerouslySetInnerHTML={{ __html: result }} />
+      <ShowAssignment
+        {...{ result, onFinish, getTopic, getFormFields, bai }}
+      />
     </>
   );
 }

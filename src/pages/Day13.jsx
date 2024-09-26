@@ -21,7 +21,7 @@ function Day13() {
   // change result when i changed
   useEffect(() => {
     setResult(null);
-    setIterateTree(null)
+    setIterateTree(null);
   }, [bai]);
 
   // Solve topic
@@ -41,7 +41,7 @@ function Day13() {
           const tree2 = convertArrayToTree(values[`b2-s1`].split(" "));
           // add result
           setResult(BFS(tree2));
-          setIterateTree("BFS - BREADTH FIRST SEARCH")
+          setIterateTree("BFS - BREADTH FIRST SEARCH");
           break;
         case "3":
           //
@@ -60,7 +60,7 @@ function Day13() {
           const tree5 = buildTree(JSON.parse(values[`b5-s1`]));
 
           setResult(BFS(recoverBST(tree5)));
-          setIterateTree("BFS - BREADTH FIRST SEARCH")
+          setIterateTree("BFS - BREADTH FIRST SEARCH");
           break;
         default:
           break;
@@ -72,36 +72,9 @@ function Day13() {
 
   return (
     <>
-      {/* <Form
-        form={form}
-        name="basic"
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        autoComplete="off"
-      >
-        <h1>Topic</h1>
-
-        <div>
-          <img
-            style={{ width: "100%",height: "80%", marginBottom: "30px" }}
-            src={getTopic(bai).link}
-            alt={getTopic(bai).image}
-          />
-        </div>
-
-        {getFormFields(bai)}
-
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Solve
-          </Button>
-        </Form.Item>
-      </Form>
-
-      {iterateTree && <h4>Duyệt Tree bằng {iterateTree}</h4>}
-      <h4>Đáp án</h4>
-      <h2 dangerouslySetInnerHTML={{ __html: result }} /> */}
-      <ShowAssignment result={result} onFinish={onFinish} getTopic={getTopic} getFormFields={getFormFields} iterateTree={iterateTree} bai={bai}  />
+      <ShowAssignment
+        {...{ result, onFinish, getTopic, getFormFields, iterateTree, bai }}
+      />
     </>
   );
 }
