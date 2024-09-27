@@ -3,6 +3,7 @@ import Day10 from "../pages/Day10";
 import Day11 from "../pages/Day11";
 import Day12 from "../pages/Day12";
 import Day13 from "../pages/Day13";
+import Day14 from "../pages/Day14";
 import Day3 from "../pages/Day3";
 import Day4 from "../pages/Day4";
 import Day5 from "../pages/Day5";
@@ -59,6 +60,10 @@ const routes = [
       {
         path: "/day13/:bai",
         element: <Day13 />
+      },
+      {
+        path: "/day14/:bai",
+        element: <Day14 />
       },
     ],
   },
