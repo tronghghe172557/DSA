@@ -92,26 +92,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day12-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/reverse-a-linked-list"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day6-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day12-3.png",
+        linkAssignment:"https://leetcode.com/problems/elimination-game/"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day12-4.png",
+        linkAssignment:"https://leetcode.com/problems/power-of-four/"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day12-5.png",
+        linkAssignment:"https://leetcode.com/problems/swap-nodes-in-pairs/"
+
       };
 
     default:

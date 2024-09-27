@@ -92,26 +92,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day13-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day13-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/tree-level-order-traversal"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day13-3.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day13-4.png",
+        linkAssignment:"https://leetcode.com/problems/binary-tree-paths/"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day13-5.png",
+        linkAssignment:"https://leetcode.com/problems/recover-binary-search-tree/"
+
       };
 
     default:

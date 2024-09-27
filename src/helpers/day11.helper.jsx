@@ -100,26 +100,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day11-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem?isFullScreen=true"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day11-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/queue-using-two-stacks/problem?isFullScreen=true"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day11-3.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem?isFullScreen=true"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day11-4.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/waiter/problem?isFullScreen=true"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day11-5.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem?isFullScreen=true"
+
       };
 
     default:

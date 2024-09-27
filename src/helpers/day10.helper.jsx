@@ -108,26 +108,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day10-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/two-strings/problem?isFullScreen=true"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day10-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/string-construction/problem?isFullScreen=true"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day10-3.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day10-4.png",
+        linkAssignment:"https://leetcode.com/problems/word-break/"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day10-5.png",
+        linkAssignment:"https://leetcode.com/problems/longest-word-in-dictionary/"
+
       };
 
     default:

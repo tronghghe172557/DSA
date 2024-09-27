@@ -110,26 +110,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day7-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/array-left-rotation"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day7-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/2d-array"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day7-3.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/birthday-cake-candles"
+
       };
     case "4":
       return {
         image: "image",
-        link: "/assets/images/day6-3.png",
+        link: "/assets/images/day7-4.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/diagonal-difference"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day7-5.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/sparse-arrays"
+
       };
 
     default:

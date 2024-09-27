@@ -92,26 +92,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day14-1.png",
+        linkAssignment:"https://leetcode.com/problems/climbing-stairs/"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day14-2.png",
+        linkAssignment:"https://leetcode.com/problems/pascals-triangle/"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day14-3.png",
+        linkAssignment:"https://leetcode.com/problems/counting-bits/"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day14-4.png",
+        linkAssignment:"https://leetcode.com/problems/is-subsequence/"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day14-5.png",
+        linkAssignment:"https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+
       };
 
     default:

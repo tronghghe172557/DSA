@@ -95,26 +95,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day9-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/java-arraylist/problem?isFullScreen=true"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day9-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/phone-book/problem?isFullScreen=true"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day9-3.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/java-hashset/problem?isFullScreen=true"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day9-4.png",
+        linkAssignment:"https://leetcode.com/problems/roman-to-integer/"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day9-5.png",
+        linkAssignment:"https://leetcode.com/problems/design-hashmap/"
+
       };
 
     default:

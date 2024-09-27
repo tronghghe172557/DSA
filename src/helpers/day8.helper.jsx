@@ -104,26 +104,36 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day8-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/reduced-string"
+
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day8-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/caesar-cipher-1"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day8-3.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/pangrams"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day8-4.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/sherlock-and-valid-string"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day8-5.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/common-child"
+
       };
 
     default:

@@ -122,26 +122,35 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day6-1.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem?isFullScreen=true"
       };
     case "2":
       return {
         image: "image",
         link: "/assets/images/day6-2.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list/problem?isFullScreen=true"
+
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day6-3.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/sparse-arrays/problem?isFullScreen=true"
+
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day6-4.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem?isFullScreen=true"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day6-5.png",
+        linkAssignment:"https://www.hackerrank.com/challenges/simple-text-editor/problem?isFullScreen=true"
+
       };
 
     default:
