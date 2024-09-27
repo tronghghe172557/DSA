@@ -66,6 +66,11 @@ function Day5() {
         autoComplete="off"
       >
         <h1>Topic</h1>
+        {getTopic(bai).linkAssignment && (
+          <a target="_blank" href={`${getTopic(bai).linkAssignment}`}>
+            <h4>Go to problem</h4>
+          </a>
+        )}
 
         {getTopic(bai).image == "image" ? (
           <div>

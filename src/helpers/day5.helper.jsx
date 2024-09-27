@@ -126,21 +126,28 @@ export const getTopic = (bai) => {
       return {
         image: "image",
         link: "/assets/images/day5-2.png",
+        linkAssignment:
+          "https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true",
       };
     case "3":
       return {
         image: "image",
         link: "/assets/images/day5-3.png",
+        linkAssignment: "https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem?isFullScreen=true"
       };
     case "4":
       return {
         image: "image",
         link: "/assets/images/day5-4.png",
+        linkAssignment: "https://www.hackerrank.com/challenges/java-lambda-expressions/problem?isFullScreen=true"
+
       };
     case "5":
       return {
         image: "image",
         link: "/assets/images/day5-bai5.jpg",
+        linkAssignment: "https://www.hackerrank.com/challenges/bon-appetit/problem?isFullScreen=true"
+
       };
 
     default:
